@@ -1,0 +1,49 @@
+﻿<Window x:Class="Examination_project.registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Examination_project"
+        mc:Ignorable="d"
+        Title="registration" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="109691.jpg"/>
+        </Grid.Background>
+
+        <StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <StackPanel Orientation="Vertical" Margin="20">
+                    <TextBlock Width="100" Height="30" Foreground="White" FontStyle="Italic" FontSize="20">First name</TextBlock>
+                    <TextBox Width="200" x:Name="TextName1"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="20">
+                    <TextBlock Width="100" Height="30" Foreground="White" FontStyle="Italic" FontSize="20">Last name</TextBlock>
+                    <TextBox Width="200" x:Name="TextName2"/>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <StackPanel Orientation="Vertical" Margin="20">
+                    <TextBlock Width="100" Height="30" Foreground="White" FontSize="25" FontStyle="Oblique">Email</TextBlock>
+                    <TextBox Width="200" Height="30"  x:Name="Email"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="20">
+                    <StackPanel Orientation="Vertical" Margin="10">
+                        <TextBlock Width="120" Height="30" Foreground="White" FontSize="25" FontStyle="Oblique">Password</TextBlock>
+                        <TextBox Width="200" Height="30" x:Name="Pass1"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="10">
+                        <TextBlock Width="200" Height="30" Foreground="White" FontSize="25" FontStyle="Oblique">Repeat Password</TextBlock>
+                        <TextBox Width="200" Height="30" x:Name="Pass2"/>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+
+            <Button Width="150" Height="30" FontSize="20" Click="Registration">Check In</Button>
+            
+        </StackPanel>
+        
+    </Grid>
+</Window>
